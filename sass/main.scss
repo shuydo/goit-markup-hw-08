@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./presets";
 @import "./components";
+    @import "./menu";
 @import "./utils";
 @import "./0header";
 @import "./1hero";
@@ -9,6 +10,6 @@
 @import "./4team";
 @import "./5clients";
 @import "./6footer";
-// @import "./portfolio";
-// @import "./backdrop_modal";
-// @import "./form";
+@import "./portfolio";
+@import "./backdrop_modal";
+@import "./form";

@@ -1,21 +1,31 @@
 .hero {
   // width: 1600px;
   height: 400px;
+    width: 480px;
   // margin: 0 auto 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+      rgba(47, 48, 58, 0.4)),
     url(../images/img.jpg);
   background-repeat: no-repeat;
   // background-size: cover;
   // padding: 200px 0 200px;
+
+  @media screen and (min-width: 768px){
+    width: 768px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/tablet/img.jpg);
+
+  }
 }
 .hero .container {
   // display: flex;
   // align-items: center;
   // flex-direction: column;
   // justify-content: center;
+  // width: 100%;
 }
 .hero-title {
   padding-top: 118px;

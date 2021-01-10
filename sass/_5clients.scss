@@ -1,44 +1,66 @@
+:root {
+  --mci: 15px; // --marg-cl-itm
+  --mcin: calc((-1) * (var(--mci))); //marginClientsItemNegative
+}
 .clients {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-    padding: 60px 0 45px;
-
-  &-header{
-    margin-bottom:30px;
-    //  50px;
+  padding: 60px 0;
+  &-header {
+    margin-bottom: calc(2 * var(--mci));
+    // outline: 1px solid black;
   }
-
-  &-list {
-    display: flex;
-      flex-wrap: wrap;
-    // justify-content: space-between;
-    list-style: none;
-  }
+}
+.clients-list {
+  // @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--mcin);
+//   outline: 1px solid black;
 }
 .client-icon {
   max-width: 88px;
   max-height: 52px;
-  fill: currentColor;
+}
+.clients-item {
+  margin: 0 var(--mci);
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    margin: var(--mci);
+    width: calc((100% - 2 * 2 * var(--mci)) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 3 * var(--mci)) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 6 * var(--mci)) / 6);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: var(--mci);
+    }
+  }
+  //   outline: 1px solid red;;
 }
 .client-link {
-  display: inline-block;
-    // width: calc((100% - 4 * 5px) / 2);
-    margin-right: 15px;
-    margin-bottom: 15px;
-    width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   text-align: center;
-  padding: 20px 0;
-  color: #afb1b8;
 
-  transition: color var(--t-cubic);
+  fill: #afb1b8;
+
+  transition: fill var(--t-cubic);
 
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
-    color: var(--accent-color);
+    fill: var(--accent-color);
     outline: none;
   }
 }
