@@ -3,7 +3,29 @@
   padding: 60px 0;
 
   &-list {
-    // display: flex;
+    @media screen and (min-width:768px){
+      margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
+
+      outline: 1px solid black;
+    }
+  }
+
+  &-item{
+    @media screen and (min-width:768px){
+      // margin: var(--mci);
+      // width: calc((100% - 2 * 2 * var(--mci)) / 2);
+      margin: 15px;
+      width: calc((100% - 2 * 2 * 15px) / 2);
+    }
+    @media screen and (min-width:1200px){
+      margin: 15px;
+      width: calc((100% - 4 * 2 * 15px) / 4);
+    }
+
+    // margin: 15px;
+    outline: 1px solid violet;
   }
 
   &-header {
@@ -38,8 +60,18 @@
   margin: 25px 190px;
   width: 70px;
   height: 70px;
+
+  @media screen and (min-width: 768px){
+    margin-left: 142px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-left: 100px;
+  }
+
 }
 .icon-place {
-  /* display: block; */
+  
+  // margin-right: auto;
+  // /* display: block; */
   background-color: #f5f4fa;
 }

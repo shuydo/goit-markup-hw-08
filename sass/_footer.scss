@@ -2,30 +2,63 @@
   padding: 60px 0;
   background-color: #2f303a;
   width: 480px;
-      // width: 100%;
+
+  @media screen and (min-width:768px){
+    width: 768px;
+  }
+
+  @media screen and (min-width:1200px){
+    width: 1600px;
+  }
 }
 .footer .container {
   // display: flex;
     // width: 100%;
 }
+.footer-tablet{
+  @media screen and (min-width:768px){
+    display: flex;
+    justify-content: space-between;
+
+    outline: 1px solid white;
+  }
+}
 .footer-logo{
   // display: block;
   // margin-left: auto;
   // margin-right: auto;
+
+  @media screen and (max-width:767px){
     text-align: center;
+  }
+  @media screen and (min-width:768px){
+    margin-left: 100px;;
+  }
 }
 .footer address {
   // width: 231px;
   // height: 81px;
   // display: inline-block;
   margin-top: 20px;
-    text-align: center;
 
-    font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: #ffffff;
+  @media screen and (max-width:767px){
+    text-align: center;
+  }
+
+  @media screen and (min-width:768px){
+    margin-left: calc(76px - 15px);
+
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  // font-weight: normal;
+  // font-size: 14px;
+  // line-height: calc(24/14);
+  // letter-spacing: 0.03em;
+
+  // color: #ffffff;
 }
 .map-address {
   font-weight: normal;
@@ -40,10 +73,22 @@
 .footer .part2 {
   color: #ffffff;
 }
+
+.address-item{
+  @media screen and (min-width:768px){
+    text-align: center;
+  }
+}
+
 .address-item .email,
 .address-item .phone {
   display: block;
 
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  
   color: rgba(255, 255, 255, 0.6);
   // margin-top: 9px;
      margin-top: 8px;
@@ -56,6 +101,10 @@
   // margin-top: 12px;
     margin-top: 60px;
     text-align: center;
+    @media screen and (min-width:768px){
+      margin-top: 5px;
+      margin-right: calc(89px - 15px);
+    }
 }
 .join-header,
 .subscribe label {
@@ -99,9 +148,19 @@
 .subscribe-email {
   display: flex;
   flex-direction: column;
+  
+  @media screen and (min-width:768px){
+    margin-left: calc(166px - 15px);
+    margin-right: calc(152px - 15px);
+  }
+
+  // outline: 1px solid white;
 }
 .subscribe input {
-    width: 96%;
+    // width: 96%;
+    // width: 50%;
+    // text-align: center;
+
   height: 50px;
   padding-left: 16px;
   background-color: #2f303a;

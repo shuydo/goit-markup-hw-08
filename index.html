@@ -221,8 +221,20 @@
           <h2 class="team-header">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <!-- <img src="images/img1.jpg" alt="Игорь" width="270" height="260" /> -->
-              <img src="images/img1.jpg" alt="Игорь" />
+              <!-- <img src="images/img1.jpg" alt="Игорь" width="270" height="260" /> --> <!-- для десктопа -->
+              <!-- <img 
+                alt="Игорь"
+                src="images/img1.jpg"
+                srcset="
+                  images/tablet/img1.jpg 354w;
+                  "
+                /> -->
+                <picture>
+                  <source media="(max-width: 767px)" srcset="/images/mobile/img1.jpg">
+                  <source media="(min-width: 1200px)" srcset="/images/desktop/img1.jpg" width="270" height="260">
+                  <img src="/images/tablet/img1.jpg" alt="Игорь">
+                </picture>
+
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="team-spec">Product Designer</p>
               <ul class="soc-links list">
@@ -277,8 +289,15 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="images/img2.jpg" alt="Ольга" />
+              <!-- <img src="images/img2.jpg" alt="Ольга" /> -->
               <!-- width="270" height="260" /> -->
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="/images/mobile/img2.jpg">
+                <source media="(min-width: 1200px)" srcset="/images/desktop/img2.jpg">
+                <img src="/images/tablet/img2.jpg" alt="Ольга">
+              </picture>
+
               <h3 class="team-name">Ольга Репина</h3>
               <p class="team-spec">Frontend Developer</p>
               <ul class="soc-links list">
@@ -332,8 +351,15 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="images/img3.jpg" alt="Николай" />
+              <!-- <img src="images/img3.jpg" alt="Николай" /> -->
               <!-- width="270" height="260" /> -->
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="/images/mobile/img3.jpg">
+                <source media="(min-width: 1200px)" srcset="/images/desktop/img3.jpg">
+                <img src="/images/tablet/img3.jpg" alt="Николай">
+              </picture>
+              
               <h3 class="team-name">Николай Тарасов</h3>
               <p class="team-spec">Marketing</p>
               <ul class="soc-links list">
@@ -388,8 +414,15 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="images/img4.jpg" alt="Михаил" />
+              <!-- <img src="images/img4.jpg" alt="Михаил" /> -->
               <!-- width="270" height="260" /> -->
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="/images/mobile/img4.jpg">
+                <source media="(min-width: 1200px)" srcset="/images/desktop/img4.jpg">
+                <img src="/images/tablet/img4.jpg" alt="Михаил">
+              </picture>
+
               <h3 class="team-name">Михаил Ермаков</h3>
               <p class="team-spec">UI Designer</p>
               <ul class="soc-links list">
@@ -506,92 +539,94 @@
 
     <footer class="footer">
       <div class="container">
-        <div>
-          <div class="footer-logo">
-            <span class="logo part1">Web</span
-            ><span class="logo part2">Studio</span>
+        <div class="footer-tablet">
+          <div>
+            <div class="footer-logo">
+              <span class="logo part1">Web</span
+              ><span class="logo part2">Studio</span>
+            </div>
+  
+            <address>
+              <ul class="list">
+                <li class="address-item">
+                  <a
+                    class="map-address link"
+                    href="https://goo.gl/maps/LiFf5QtH2XgNbK3g6"
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-item">
+                  <a
+                    class="email link"
+                    lang="en"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="address-item">
+                  <a class="phone link" href="+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
-
-          <address>
-            <ul class="list">
-              <li class="address-item">
+          <!-- Присоединяйтесь -->
+          <div class="join-box">
+            <span class="join-header">присоединяйтесь</span>
+            <ul class="soc-links list">
+              <li>
                 <a
-                  class="map-address link"
-                  href="https://goo.gl/maps/LiFf5QtH2XgNbK3g6"
+                  class="soc-list-link"
+                  href="https://www.instagram.com"
                   target="_blank"
                   rel="nofollow noreferrer"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg class="soc-icon">
+                    <use href="./images/sprite.svg#instagram1"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-item">
+              <li>
                 <a
-                  class="email link"
-                  lang="en"
-                  href="mailto:info@devstudio.com"
+                  class="soc-list-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="nofollow noreferrer"
                 >
-                  info@devstudio.com
+                  <svg class="soc-icon">
+                    <use href="./images/sprite.svg#twitter1"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-item">
-                <a class="phone link" href="+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a
+                  class="soc-list-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  <svg class="soc-icon">
+                    <use href="./images/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="soc-list-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  <svg class="soc-icon">
+                    <use href="./images/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <!-- Присоединяйтесь -->
-        <div class="join-box">
-          <span class="join-header">присоединяйтесь</span>
-          <ul class="soc-links list">
-            <li>
-              <a
-                class="soc-list-link"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="nofollow noreferrer"
-              >
-                <svg class="soc-icon">
-                  <use href="./images/sprite.svg#instagram1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="soc-list-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="nofollow noreferrer"
-              >
-                <svg class="soc-icon">
-                  <use href="./images/sprite.svg#twitter1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="soc-list-link"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="nofollow noreferrer"
-              >
-                <svg class="soc-icon">
-                  <use href="./images/sprite.svg#facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="soc-list-link"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="nofollow noreferrer"
-              >
-                <svg class="soc-icon">
-                  <use href="./images/sprite.svg#linkedin1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!------------------- ПОДПИСКА -------------------->
         <form class="subscribe">
