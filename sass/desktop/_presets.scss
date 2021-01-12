@@ -1,0 +1,35 @@
+body {
+  font-family: Roboto; // font-style: normal; 
+  /*не ясно, почему нет у элемента 1st, в TDs*/
+}
+img {
+  display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+ul,ol {
+  margin: 0;
+  padding: 0;
+}
+address {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.direction-title,
+.team-header,
+.clients-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}

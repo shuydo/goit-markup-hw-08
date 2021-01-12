@@ -107,7 +107,7 @@
     }
 }
 .join-header,
-.subscribe label {
+.subscribe-email label {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -136,16 +136,20 @@
   // height: 86px;
   // margin-left: 93px;
   // margin-top: 12px;
-    margin-top: 60px;
-    text-align: center;
+    // margin-top: 60px;
+    // text-align: center;
   // align-items: flex-end;
   // justify-content: space-between;
+  
 }
-.subscribe label {
+.subscribe-email label {
   margin-bottom: 20px;
     // text-align: center;
 }
 .subscribe-email {
+
+  margin-top: 60px;
+    text-align: center;
   display: flex;
   flex-direction: column;
   
@@ -156,7 +160,7 @@
 
   // outline: 1px solid white;
 }
-.subscribe input {
+.subscribe-email input {
     // width: 96%;
     // width: 50%;
     // text-align: center;
@@ -172,7 +176,7 @@
   line-height: calc(20 / 16);
   color: #fff;
 }
-.subscribe button {
+.subscribe-email button {
   margin: 20px auto 0 auto;
   // padding: 29px;
   // padding-top: 10px;

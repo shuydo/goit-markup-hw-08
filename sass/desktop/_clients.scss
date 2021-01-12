@@ -1,0 +1,38 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-header{
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+}
+.client-icon {
+  max-width: 88px;
+  max-height: 52px;
+  fill: currentColor;
+}
+.client-link {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 0;
+  color: #afb1b8;
+
+  transition: color var(--t-cubic);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    outline: none;
+  }
+}

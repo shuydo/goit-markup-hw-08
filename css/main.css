@@ -681,7 +681,7 @@ address {
 }
 
 .join-header,
-.subscribe label {
+.subscribe-email label {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -700,16 +700,13 @@ address {
 }
 
 /* ------------------- ПОДПИСКА --------------------*/
-.subscribe {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.subscribe label {
+.subscribe-email label {
   margin-bottom: 20px;
 }
 
 .subscribe-email {
+  margin-top: 60px;
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
@@ -721,7 +718,7 @@ address {
   }
 }
 
-.subscribe input {
+.subscribe-email input {
   height: 50px;
   padding-left: 16px;
   background-color: #2f303a;
@@ -733,7 +730,7 @@ address {
   color: #fff;
 }
 
-.subscribe button {
+.subscribe-email button {
   margin: 20px auto 0 auto;
   color: #fff;
   background-color: var(--accent-color);
