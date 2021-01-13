@@ -1,16 +1,25 @@
-@import "./variables";
-@import "./presets";
-@import "./components";
-    @import "./menu";
-@import "./utils";
-@import "./0header";
-@import "./1hero";
-@import "./2vertu";
-// @import "./3directions";
-@import "./4team";
-@import "./5clients";
-@import "./footer";
-@import "./portfolio";
-@import "./backdrop_modal";
-@import "./form";
+$dt-res:1200px;
+
+@import "./0/variables";
+@import "./0/presets";
+@import "./0/components";
+@import "./0/utils";
+
+// @import "./1/menu";
+
+// @import "./1/0header";
+// @import "./1/1hero";
+// @import "./1/2vertu";
+
+// @import "./1/4team";
+// @import "./1/5clients";
+
+// @import "./1/6footer";
+
+// @import "./1/portfolio";
+// @import "./1/backdrop_modal";
+// @import "./1/form";
+
 // @import "./desktop/desktop"
+@import "./12/brkpnt_c";
+// @import "./3/brkpnt_d"

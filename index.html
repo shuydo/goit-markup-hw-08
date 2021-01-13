@@ -231,7 +231,7 @@
                 /> -->
                 <picture>
                   <source media="(max-width: 767px)" srcset="/images/mobile/img1.jpg">
-                  <source media="(min-width: 1200px)" srcset="/images/desktop/img1.jpg" width="270" height="260">
+                  <source media="(min-width: 1200px)" srcset="/images/desktop/img1.jpg 3x" width="270" height="260">
                   <img src="/images/tablet/img1.jpg" alt="Игорь">
                 </picture>
 
@@ -294,7 +294,7 @@
 
               <picture>
                 <source media="(max-width: 767px)" srcset="/images/mobile/img2.jpg">
-                <source media="(min-width: 1200px)" srcset="/images/desktop/img2.jpg">
+                <source media="(min-width: 1200px)" srcset="/images/desktop/img2.jpg 3x">
                 <img src="/images/tablet/img2.jpg" alt="Ольга">
               </picture>
 
@@ -356,7 +356,7 @@
 
               <picture>
                 <source media="(max-width: 767px)" srcset="/images/mobile/img3.jpg">
-                <source media="(min-width: 1200px)" srcset="/images/desktop/img3.jpg">
+                <source media="(min-width: 1200px)" srcset="/images/desktop/img3.jpg 3x">
                 <img src="/images/tablet/img3.jpg" alt="Николай">
               </picture>
               
@@ -419,7 +419,7 @@
 
               <picture>
                 <source media="(max-width: 767px)" srcset="/images/mobile/img4.jpg">
-                <source media="(min-width: 1200px)" srcset="/images/desktop/img4.jpg">
+                <source media="(min-width: 1200px)" srcset="/images/desktop/img4.jpg 3x">
                 <img src="/images/tablet/img4.jpg" alt="Михаил">
               </picture>
 
@@ -631,13 +631,13 @@
         <!------------------- ПОДПИСКА -------------------->
         <form class="subscribe-email">
           
-            <label for="sub-form">Подпишитесь на рассылку</label>
-            <input
+            <label for="sub-form">Подпишитесь на рассылку
+            <input class="subscribe-input"
               type="email"
               name="subscribe"
               id="sub-form"
               placeholder="E-mail"
-            />
+            /></label>
 
             <button class="button">
               Подписаться
