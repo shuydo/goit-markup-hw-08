@@ -1,0 +1,48 @@
+//  Combi Vertu M & T
+
+.vertu {
+    // padding: 94px 0;
+    padding: 60px 0;
+  
+    &-item{
+      outline: 1px solid violet;
+      
+      // @media screen and (min-width:1200px){}
+      // margin: 15px;
+      
+    }
+  
+    &-header {
+      margin-top: 30px;
+      font-weight: bold;
+      // 700
+      font-size: 14px;
+      line-height: calc(16 / 14);
+        text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--title-text-color);
+    }
+  
+    &-text {
+      margin: 10px 0 30px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      letter-spacing: 0.03em;
+      color: var(--primary-text-color);
+    }
+  }
+  // .vertu-item {
+  //   // width: 270px;
+  
+  //   &:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+  // }
+  .icon-place {
+  
+    // margin-right: auto;
+    // /* display: block; */
+    background-color: #f5f4fa;
+  }

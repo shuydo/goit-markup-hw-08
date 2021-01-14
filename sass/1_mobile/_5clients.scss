@@ -1,0 +1,12 @@
+//      Mobile Clients
+
+@media screen and (max-width: 767px) {
+  .clients-item {
+    margin: var(--mci);
+    width: calc((100% - 2 * 2 * var(--mci)) / 2);
+
+    &:not(:last-child) {
+      margin-bottom: var(--mci);
+    }
+  }
+}

@@ -20,6 +20,7 @@
   <!--target="_blank" rel="nofollow noreferrer"-->
 
   <body>
+    <!---------- Шапка      HEADER ---------------->
     <header class="header">
       <div class="container">
         <nav class="nav">          
@@ -27,6 +28,7 @@
           <a class="logo link" lang="en" href="index.html" aria-label="Логотип">
             <span class="part1">Web</span><span class="part2">Studio</span>
           </a>
+          
 
           <button
             type="button"
@@ -43,11 +45,9 @@
               <use class="icon-cross" href="./images/sprite-r.svg#cross"></use>
               <use class="icon-menu" href="./images/sprite-r.svg#menu"></use>
             </svg>
-          </button>
-
-          <!-- <div class="menu-container is-open" id="menu-container" data-menu> -->
-          <div class="menu-container" id="menu-container" data-menu>
-            <!-- <div class="navigation"> -->
+          </button>         
+                                      <!-- <div class="menu-container is-open" id="menu-container" data-menu> -->
+            <div class="menu-container" id="menu-container" data-menu>
               <ul class="site-nav list">
                 <li>
                   <a class="site-page link is-current" href="index.html">Студия</a>
@@ -59,9 +59,7 @@
                   <a class="site-page link" href="#">Контакты</a>
                 </li>
               </ul>
-            <!-- </div> -->
 
-            <!-- <div class="contacts"> -->
               <address class="contacts">
                 <a
                   class="email link"
@@ -80,40 +78,17 @@
                   +38 096 111 11 11
                 </a>
               </address>
-            <!-- </div> -->
+            </div>
           </div>
-
-          <!-- <ul class="site-nav list">
-          <li>
-            <a class="link is-current" href="index.html">Студия</a>
-          </li>
-          <li>
-            <a class="link" href="portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="link" href="#">Контакты</a>
-          </li>
-        </ul> -->
         </nav>
-        <!-- <address>
-        <a class="email link" lang="en" href="mailto:info@devstudio.com">
-          <svg class="envelope" width="16" height="12">
-            <use href="./images/sprite.svg#envelope"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-        <a class="phone link" href="+380961111111">
-          <svg class="smartphone" width="10" height="16">
-            <use href="./images/sprite.svg#smartphone"></use>
-          </svg>
-          +38 096 111 11 11
-        </a>
-      </address> -->
       </div>
+      
+      <p></p>
+
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero invisible">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />для вашего бизнеса
@@ -124,7 +99,7 @@
         </div>
       </section>
       <!----- Достоинства ----->
-      <section class="vertu">
+      <section class="vertu invisible">
         <h2 class="invisible">Достоинства</h2>
 
         <div class="container">
@@ -216,7 +191,7 @@
         </div>
       </section>
       <!----- Команда ----->
-      <section class="team">
+      <section class="team invisible">
         <div class="container">
           <h2 class="team-header">Наша команда</h2>
           <ul class="team-list list">
@@ -480,7 +455,7 @@
         </div>
       </section>
       <!--Постоянные клиенты-->
-      <section class="clients">
+      <section class="clients invisible">
         <div class="container">
           <h2 class="clients-header">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -537,7 +512,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer invisible">
       <div class="container">
         <div class="footer-tablet">
           <div>
@@ -651,8 +626,8 @@
     </footer>
     <!----------- <div class="backdrop is-hidden" data-modal> -------->
     <div class="backdrop is-hidden" data-modal>
-      <!-- <div class="modal invisible"> -->
-      <div class="modal">
+      <div class="modal invisible">
+      <!-- <div class="modal"> -->
 
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11" height="11">

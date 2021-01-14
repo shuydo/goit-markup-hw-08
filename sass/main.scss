@@ -1,9 +1,26 @@
-$dt-res:1200px;
+$dt-res: 1200px;
 
-@import "./0/variables";
-@import "./0/presets";
-@import "./0/components";
-@import "./0/utils";
+@import "./0/base";
+
+@import "./1_mobile/brkpnt_640"; 
+
+@import "./2_tablet/brkpnt_768";
+
+@import "./3_desktop/brkpnt_1200"
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @import "./12/brkpnt_c";
 
 // @import "./1/menu";
 
@@ -21,5 +38,3 @@ $dt-res:1200px;
 // @import "./1/form";
 
 // @import "./desktop/desktop"
-@import "./12/brkpnt_c";
-// @import "./3/brkpnt_d"

@@ -1,0 +1,33 @@
+//              Tablet Header ! Закрать }
+// .logo{
+//     outline: 1px solid black;
+// }
+@media screen and (min-width: 768px) and(max-width: 1199px) {
+// .header .container {
+    // position: relative;
+    // height: 80px;
+	// padding:21px 0;
+  
+    // border-bottom: 1px solid #ececec;  
+    // maket by
+//   }
+// .logo{
+//     outline: 1px solid black;
+// }
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  
+    // outline: 1px solid teal; 
+  }
+  // .header::after {
+  //   content: "";
+  //   width: 1600px;
+  //   height: 1px;
+  //   background-color: #ececec;
+  //   display: block;
+  //   margin: 0 auto auto;
+  // }
+}

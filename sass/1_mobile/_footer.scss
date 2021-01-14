@@ -1,0 +1,41 @@
+//      Mobile Footer
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 60px 0;
+    background-color: #2f303a;
+    width: 480px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer address {
+    text-align: center;
+  } // M
+
+  .map-address {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    transition: color var(--t-cubic);
+  }
+  .footer .part2 {
+    color: #ffffff;
+  }
+
+  /* ------------------- Присоединяйтесь --------------------*/
+
+  // .join-box
+  .soc-links {
+    // display: flex;
+    // justify-content: space-between;
+    // margin-top: 20px;
+    // fill: #afb1b8;
+    fill: #fff;
+    margin: 20px auto 0 auto;
+  }
+}

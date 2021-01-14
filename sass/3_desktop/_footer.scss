@@ -1,0 +1,122 @@
+//      Desktop Footer
+
+@media screen and (min-width: $dt-res) {
+  .footer {
+    padding: 60px 0;
+    // width: 1600px;
+    width: 1200px;
+
+    background-color: #2f303a;
+  }
+  .footer .container {
+    display: flex;
+  }
+  .footer address {
+    width: 231px;
+    height: 81px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .map-address {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    transition: color var(--t-cubic);
+  }
+  .footer .part2 {
+    color: #ffffff;
+  }
+  .address-item .email,
+  .address-item .phone {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .footer-tablet {
+    display: flex;
+    justify-content: space-between;
+
+    // outline: 1px solid white;
+  }
+  .join-box {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    margin-right: 0;
+    margin-top: 12px;
+  }
+  .join-header,
+  .subscribe-email label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+
+    // outline: 1px solid red;
+  }
+  .soc-list-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .join-box .soc-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    fill: #afb1b8;
+  }
+  /* ------------------- ПОДПИСКА --------------------*/
+  .subscribe-email {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    // flex-direction: column;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+    margin-top: 12px;
+
+    // align-items: flex-end;
+    
+
+    // outline: 1px solid white;
+  }
+  .subscribe-email label {
+    // margin-bottom: 20px;
+    // outline: 1px solid white;
+    width: 358px;
+  }
+  .subscribe-input {
+    width: 358px;
+    // display: block;
+    
+    margin-top: 20px;
+    
+    // width: 358px;
+    
+    height: 50px;
+    padding-left: 16px;
+    background-color: #2f303a;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    line-height: calc(20 / 16);
+    color: #fff;
+  }
+  .subscribe-email button {
+    padding: 10px 29px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    color: #fff;
+    background-color: var(--accent-color);
+  }
+  .send {
+    margin-left: 10px;
+  }
+}

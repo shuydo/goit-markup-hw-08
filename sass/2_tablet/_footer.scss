@@ -1,0 +1,32 @@
+//          Tablet Footer
+
+.footer {
+  width: 768px;
+}
+.footer-tablet {
+  display: flex;
+  justify-content: space-between;
+
+  // outline: 1px solid white;
+}
+.footer-logo {
+  margin-left: 100px;
+}
+.footer address {
+  // margin-left: calc(76px - 15px);
+
+  display: flex;
+}
+.address-item {
+  text-align: center;
+  margin-left: 61px;
+}
+.join-box {
+  margin-top: 5px;
+  // margin-right: calc(89px - 15px);
+}
+.subscribe-email {
+  
+      margin-left: calc(166px - 15px);
+      margin-right: calc(152px - 15px);
+    }

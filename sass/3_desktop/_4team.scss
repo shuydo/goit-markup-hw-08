@@ -1,0 +1,93 @@
+//      Desktop Team
+
+@media screen and (min-width: 1200px) {
+  .team {
+    // background-color: #f5f4fa;
+    padding: 94px 0;
+
+    width: $dt-res; 
+    // 1600px;
+    // width: 100%;
+  }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-header {
+    padding-bottom: 50px;
+  }
+  .team-item {
+    // width: 270px;
+    margin: 15px;
+    width: calc((100% - 4 * 2 * 15px) / 4);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team-name {
+    margin-top: 30px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  .team-spec {
+    margin-top: 10px;
+    margin-bottom: 16px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+  .soc-links {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+
+    .team & {
+      display: inline-flex;
+      margin: 0 0 30px 32px;
+      fill: #afb1b8;
+      border-radius: 50%;
+    }
+  }
+  .soc-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color var(--t-cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      transition: var(--t-cubic);
+    }
+  }
+  .soc-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill var(--t-cubic);
+
+    .soc-list-link:hover &,
+    .soc-list-link:focus & {
+      fill: #fff;
+      transition: fill var(--t-cubic);
+    }
+  }
+  .team img {
+    width: 270px;
+  }
+}

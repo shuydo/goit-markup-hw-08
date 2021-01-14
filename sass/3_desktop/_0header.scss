@@ -1,0 +1,38 @@
+//      Desktop Header
+
+@media screen and (min-width: $dt-res) {
+  // @media screen and (min-width: 600px){
+
+  .logo {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    // (28 / 24); //in Mobi & Tablet
+    letter-spacing: 0.03em;
+
+    // outline: 1px solid black;
+  }
+  // --------------------------------
+  // .navigation { уже нет класса
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  // .header::after { так сложно линию уже не рисую
+  //   content: "";
+  //   width: $dt-res;                 // 1600px;
+  //   height: 1px;
+  //   background-color: #ececec;
+  //   display: block;
+  //   margin: 0 auto auto;
+  // }
+  .nav {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  
+    // outline: 1px solid teal; 
+  }
+}
