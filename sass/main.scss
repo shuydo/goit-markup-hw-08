@@ -1,15 +1,21 @@
 $dt-res: 1200px;
 
 @import "./0/base";
+// .header{
+//     display: none;
+// }
 
-@import "./1_mobile/brkpnt_640"; 
-
-@import "./2_tablet/brkpnt_768";
-
-@import "./3_desktop/brkpnt_1200"
-
+@import "./1_mobile/bp_640"; 
 
 
+@import "./2_tablet/bp_768";
+
+@import "./3_desktop/bp_1200"
+
+
+// .test{
+//     height: px;
+// }
 
 
 

@@ -1,9 +1,13 @@
 //             Mobil Menu
 @media screen and (max-width: 767px) {
-  
-  // .menu-button{
+  .menu-button {
     // outline: none;  // !не работает. Почему?
-  // }
+    display: inline-flex;
+    margin: 0;
+    // padding: 0;    //    не вижу нужды
+    border: none;
+    background-color: transparent;
+  }
   .menu-button .icon-cross {
     display: none;
   }
@@ -20,6 +24,10 @@
     left: 0;
     width: 100%;
     padding: 60px 0;
+
+    background-color: white;
+    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    //   0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
       display: block;

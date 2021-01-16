@@ -1,8 +1,9 @@
 @media screen and (min-width:$dt-res){
 .hero {
-  width: $dt-res;
+  // width: $dt-res;
   // 1600px;
-  height: 600px;
+  // height: 600px;
+  padding: 200px 0;
   margin: 0 auto 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -10,8 +11,14 @@
     ),
     url(../images/desktop/img.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 200px 0 200px;
+  // background-size: cover;
+
+  background-size: 1600px 600px;
+    background-position: center top;
+
+    outline: 2px solid blueviolet;
+
+  
 }
 .hero .container {
   display: flex;
