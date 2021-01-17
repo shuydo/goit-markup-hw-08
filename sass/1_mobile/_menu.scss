@@ -4,7 +4,7 @@
     // outline: none;  // !не работает. Почему?
     display: inline-flex;
     margin: 0;
-    // padding: 0;    //    не вижу нужды
+    padding: 0;    //    не вижу нужды
     border: none;
     background-color: transparent;
   }
@@ -26,8 +26,8 @@
     padding: 60px 0;
 
     background-color: white;
-    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    //   0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
       display: block;
@@ -44,32 +44,49 @@
 
     color: var(--title-text-color);
   }
-  // .site-nav {
-  //   margin: 60px 0;
-  // }
+  .site-nav {
+    margin-bottom: 60px;
+    // outline: 1px solid black;
+  }
   .site-nav li:not(:last-child) {
     margin-bottom: 40px;
   }
   .site-nav li {
     text-align: center;
-
-    // outline: 1px solid black;
   }
   .link.is-current {
     color: var(--accent-color);
   }
-  .contacts {
-    margin-top: 60px;
-    // height: 58px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
-    // margin-bottom: 0;
-
-    // outline: 1px solid black;
+  //-----------
+  .site-nav .link {
+    padding-bottom: 8px;
+    position: relative;
   }
-  .email,
-  .phone {
+  .link.is-current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+  .site-nav .link:hover,
+  .site-nav .link:focus,
+  .email:hover,
+  .email:focus,
+  .phone:hover,
+  .phone:focus,
+  .map-address:hover,
+  .map-address:focus {
+    color: var(--accent-color);
+  }
+  //---------------
+  .contacts .email,
+  .contacts .phone {
     display: block;
     font-weight: 500;
     font-size: 18px;

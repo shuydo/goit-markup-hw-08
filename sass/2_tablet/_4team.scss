@@ -1,21 +1,23 @@
 //          Tablet Team
 
-.team {
-  width: 768px;
-}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  // .team {
+  //   width: 768px;
+  // }
 
-.team-list {
-  // display: flex;
-  // justify-content: space-between;
+  .team-list {
+    // display: flex;
+    // justify-content: space-between;
 
-  margin: -15px;
-  display: flex;
-  flex-wrap: wrap;
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
 
-  outline: 1px solid black;
-}
-.team-item {
-  // width: 270px; DT
-  margin: 15px;
-  width: calc((100% - 2 * 2 * 15px) / 2);
+    outline: 1px solid black;
+  }
+  .team-item {
+    // width: 270px; DT
+    margin: 15px;
+    width: calc((100% - 2 * 2 * 15px) / 2);
+  }
 }

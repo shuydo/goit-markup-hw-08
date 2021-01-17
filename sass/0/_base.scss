@@ -5,17 +5,17 @@
 @import "./3utils";
 @import "./4components";
 
-// @import "./menu_m_t";    //  упразднён
+// @import "./menu_m_t"; //  упразднён
 
-// @import "./0header_m_t";
+@import "./0header_m_t";
 // @import "./1hero_m_t";   //  упразднён
-// @import "./2vertu_m_t";
+@import "./2vertu_m_t";
+.direction {
+  display: none;
+} // @import "./3directions";
+@import "./4team_m_t"; // @import "./"
+@import "./5clients_m_t"; // @import "./"
+@import "./footer_m_t"; // @import "."
 
-    // @import "./3directions";
-
-// @import "./"
-// @import "./"
-// @import "./"
-// @import "./"
-// @import "./"
-// @import "./"
+@import "./backdrop_modal";
+@import "./form"

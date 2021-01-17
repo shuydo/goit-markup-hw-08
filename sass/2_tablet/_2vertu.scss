@@ -1,23 +1,28 @@
 // Tablet Vertu ! закрыть скобку {
 
-.vertu {
-  // padding: 94px 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .vertu {
+    // padding: 94px 0;
 
-  &-list {
-    margin: -15px;
-    display: flex;
-    flex-wrap: wrap;
+    &-list {
+      margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
 
-    outline: 1px solid black;
+      outline: 1px solid black;
+    }
+
+    &-item {
+      // margin: var(--mci);
+      // width: calc((100% - 2 * 2 * var(--mci)) / 2);
+      margin: 15px;
+      width: calc((100% - 2 * 2 * 15px) / 2);
+    }
   }
-
-  &-item {
-    // margin: var(--mci);
-    // width: calc((100% - 2 * 2 * var(--mci)) / 2);
-    margin: 15px;
-    width: calc((100% - 2 * 2 * 15px) / 2);
+  .vertu .icon {
+    // margin-left: 142px;
+    margin: 25px 142px;
+    width: 70px;
+    height: 70px;
   }
-}
-.vertu .icon {
-  margin-left: 142px;
 }

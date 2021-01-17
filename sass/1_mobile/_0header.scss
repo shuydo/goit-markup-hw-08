@@ -1,13 +1,28 @@
 //      Mobi Header   ! Закрыть фигурку
 
 @media screen and (max-width: 767px) {
-  .header .container {
-    position: relative;
-    // position: fixed;
-    // z-index: 100;
+  .header{
+    // position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .zero{
+    // display: none;
+    // position: relative;
     height: 60px;
+    background-color: tomato;
+  }
+  .header .container {
+    // display: none;
+    // position: relative;
+    position: fixed;
+    // z-index: 100;
+    min-width: 480px;
+    height: 60px;
+    background: #fff;;
+    // transform: translateY(-100%) ;
 
-    // border-bottom: 1px solid #ececec; // maket by
+    border-bottom: 1px solid #ececec; // maket by
      outline: 1px solid black;
   }
   .logo {

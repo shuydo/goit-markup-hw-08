@@ -1,46 +1,10 @@
 $dt-res: 1200px;
 
 @import "./0/base";
-// .header{
-//     display: none;
-// }
+// .header{display: none;}
 
-@import "./1_mobile/bp_640"; 
-
+@import "./1_mobile/bp_640";
 
 @import "./2_tablet/bp_768";
 
-@import "./3_desktop/bp_1200"
-
-
-// .test{
-//     height: px;
-// }
-
-
-
-
-
-
-
-
-
-
-// @import "./12/brkpnt_c";
-
-// @import "./1/menu";
-
-// @import "./1/0header";
-// @import "./1/1hero";
-// @import "./1/2vertu";
-
-// @import "./1/4team";
-// @import "./1/5clients";
-
-// @import "./1/6footer";
-
-// @import "./1/portfolio";
-// @import "./1/backdrop_modal";
-// @import "./1/form";
-
-// @import "./desktop/desktop"
+@import "./3_desktop/bp_1200"; 

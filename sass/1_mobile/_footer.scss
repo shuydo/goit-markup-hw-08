@@ -3,7 +3,7 @@
   .footer {
     padding: 60px 0;
     background-color: #2f303a;
-    width: 480px;
+    // width: 480px;
   }
 
   .footer-logo {
@@ -15,11 +15,11 @@
   } // M
 
   .map-address {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: #ffffff;
+    // font-weight: normal;
+    // font-size: 14px;
+    // line-height: calc(24 / 14);
+    // letter-spacing: 0.03em;
+    // color: #ffffff;
 
     transition: color var(--t-cubic);
   }
@@ -36,6 +36,6 @@
     // margin-top: 20px;
     // fill: #afb1b8;
     fill: #fff;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
   }
 }

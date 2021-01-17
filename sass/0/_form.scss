@@ -2,7 +2,6 @@
 
 //      Desktop Form
 
-@media screen and (max-width: 767px){
 .form h2 {
   margin-bottom: 12px;
 
@@ -66,7 +65,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--t-cubic);
-  
+
   &:focus-within {
     outline: none;
     border: 1px solid var(--accent-color);
@@ -81,9 +80,9 @@
   margin-right: auto;
 
   & span {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-  
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
     color: #757575;
     vertical-align: middle;
   }
@@ -116,4 +115,4 @@
   margin: 30px auto 0;
   color: #fff;
   background-color: var(--accent-color);
-}}
+}

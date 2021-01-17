@@ -5,26 +5,30 @@
     // background-color: #f5f4fa;
     padding: 94px 0;
 
-    width: $dt-res; 
+    // width: $dt-res;
     // 1600px;
     // width: 100%;
   }
   .team-list {
+    margin: -15px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
   .team-header {
     padding-bottom: 50px;
   }
   .team-item {
     // width: 270px;
+    padding-bottom: 30px;
     margin: 15px;
-    width: calc((100% - 4 * 2 * 15px) / 4);
+    // width: calc((100% - 4 * 2 * 15px) / 4);
 
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    // outline: 1px solid black;
   }
   .team-name {
     margin-top: 30px;
@@ -54,7 +58,7 @@
 
     .team & {
       display: inline-flex;
-      margin: 0 0 30px 32px;
+      margin: 0 32px;
       fill: #afb1b8;
       border-radius: 50%;
     }
