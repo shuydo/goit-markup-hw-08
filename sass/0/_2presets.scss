@@ -21,19 +21,17 @@ ol {
   margin: 0;
   padding: 0;
 }
-img{
+img {
   display: block;
 }
 address {
   font-style: normal;
 }
-.container {  
+.container {
   padding-left: 15px;
   padding-right: 15px;
-  
 
-  
-  @media screen and (min-width: 480px) {   
+  @media screen and (min-width: 480px) {
     max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
@@ -46,8 +44,8 @@ address {
     // width: 100%;
   }
 
- @media screen and (min-width: 1200px) {
-  max-width: 1200px;
-   }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 // .direction-title,

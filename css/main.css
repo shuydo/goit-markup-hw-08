@@ -139,10 +139,6 @@ address {
   padding: 60px 0;
 }
 
-.vertu-item {
-  outline: 1px solid violet;
-}
-
 .vertu-header {
   margin-top: 30px;
   font-weight: bold;
@@ -187,7 +183,6 @@ address {
 }
 
 .team-item {
-  outline: 1px solid violet;
   margin-top: 30px;
   padding-bottom: 24px;
   background-color: #fff;
@@ -664,7 +659,6 @@ address {
     height: 60px;
     background: #fff;
     border-bottom: 1px solid #ececec;
-    outline: 1px solid black;
   }
   .logo {
     font-weight: bold;
@@ -682,12 +676,20 @@ address {
   .hero {
     height: 400px;
     padding: 118px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/img.jpg);
     background-size: 480px 400px;
     background-repeat: no-repeat;
     background-position: center top;
-    outline: 2px solid blueviolet;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-title {
     font-weight: 900;
     font-size: 26px;
@@ -699,7 +701,8 @@ address {
   }
   .hero .button {
     margin: 30px auto 0 auto;
-    background-color: red;
+    background-color: var(--accent-color);
+    color: #fff;
   }
 }
 
@@ -768,7 +771,6 @@ address {
   .portfolio-item {
     width: 100%;
     border: 1px solid #eeeeee;
-    outline: 1px solid violet;
   }
   .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
@@ -907,12 +909,20 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     padding: 118px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/img.jpg);
     background-size: 768px 400px;
     background-repeat: no-repeat;
     background-position: center top;
-    outline: 2px solid blueviolet;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-title {
     font-weight: 900;
     font-size: 26px;
@@ -924,6 +934,8 @@ address {
   }
   .hero .button {
     margin: 30px auto 0 auto;
+    color: #fffx;
+    background-color: var(--accent-color);
   }
 }
 
@@ -932,7 +944,6 @@ address {
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid black;
   }
   .vertu-item {
     margin: 15px;
@@ -950,7 +961,6 @@ address {
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid black;
   }
   .team-item {
     margin: 15px;
@@ -1033,7 +1043,6 @@ address {
     width: calc((100% - 2 * 2 * 15px) / 2);
     border: 1px solid #eeeeee;
     margin: 15px;
-    outline: 1px solid violet;
   }
   .portfolio-item:focus-within, .portfolio-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1198,12 +1207,20 @@ address {
   .hero {
     padding: 200px 0;
     margin: 0 auto 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/img.jpg);
     background-repeat: no-repeat;
     background-size: 1600px 600px;
     background-position: center top;
-    outline: 2px solid blueviolet;
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero .container {
     display: flex;
     align-items: center;
@@ -1222,6 +1239,8 @@ address {
   }
   .hero .button {
     margin-top: 30px;
+    color: #fff;
+    background-color: var(--accent-color);
   }
 }
 
@@ -1385,7 +1404,6 @@ address {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    outline: 1px solid black;
   }
   .client-icon {
     max-width: 88px;

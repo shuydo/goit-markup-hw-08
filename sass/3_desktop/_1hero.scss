@@ -5,18 +5,29 @@
   // height: 600px;
   padding: 200px 0;
   margin: 0 auto 0 auto;
+  
+  @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/desktop/img@2x.jpg);
+    }
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/desktop/img.jpg);
+    url(../../images/desktop/img.jpg);
   background-repeat: no-repeat;
   // background-size: cover;
 
   background-size: 1600px 600px;
     background-position: center top;
 
-    outline: 2px solid blueviolet;
+    // outline: 2px solid blueviolet;
 
   
 }
@@ -37,5 +48,7 @@
   color: #ffffff;
 }
 .hero .button {
-  margin-top: 30px;  
+    margin-top: 30px;  
+    color:#fff;
+    background-color: var(--accent-color);
 }}
