@@ -8,6 +8,12 @@
     display: flex;
     justify-content: space-between;
   }
+  .direction-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
   .thumb {
     position: relative;
     height: 294px;

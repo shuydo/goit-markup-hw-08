@@ -2,13 +2,14 @@
 
 @media screen and (max-width: 767px) {
   .vertu .icon {
-    margin: 25px 190px;
+    margin: 25px 0px;
     width: 70px;
     height: 70px;
   }
-  // .icon-place{
-    // display: flex;
-    // margin: 25px auto;
-    // padding: 25px auto;
-  // }
+  .icon-place{
+    display: flex;
+    justify-content: center;
+    // align-items: center; 
+    border-radius: 4px;
+  }
 }

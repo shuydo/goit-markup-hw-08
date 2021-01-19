@@ -151,12 +151,16 @@ address {
 }
 
 .vertu-text {
-  margin: 10px 0 30px;
+  margin-top: 10px;
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.vertu-item {
+  margin-bottom: 30px;
 }
 
 .icon-place {
@@ -646,6 +650,7 @@ address {
 
 @media screen and (max-width: 767px) {
   .header {
+    position: relative;
     display: flex;
     justify-content: center;
   }
@@ -655,7 +660,7 @@ address {
   }
   .header .container {
     position: fixed;
-    min-width: 480px;
+    width: 100%;
     height: 60px;
     background: #fff;
     border-bottom: 1px solid #ececec;
@@ -708,9 +713,14 @@ address {
 
 @media screen and (max-width: 767px) {
   .vertu .icon {
-    margin: 25px 190px;
+    margin: 25px 0px;
     width: 70px;
     height: 70px;
+  }
+  .icon-place {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
   }
 }
 
@@ -1293,6 +1303,12 @@ address {
     display: flex;
     justify-content: space-between;
   }
+  .direction-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
   .thumb {
     position: relative;
     height: 294px;
@@ -1325,6 +1341,8 @@ address {
   }
   .team-header {
     padding-bottom: 50px;
+    font-size: 36px;
+    line-height: calc(42/36);
   }
   .team-item {
     padding-bottom: 30px;
@@ -1398,6 +1416,8 @@ address {
     padding-bottom: 94px;
   }
   .clients-header {
+    font-size: 36px;
+    line-height: calc(42/36);
     margin-bottom: 50px;
   }
   .clients-list {
