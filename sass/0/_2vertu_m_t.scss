@@ -1,20 +1,12 @@
-//  Combi Vertu M & T
+//          0 Vertu
 
 .vertu {
-  // padding: 94px 0;
   padding: 60px 0;
-
-  // &-item {
-    // outline: 1px solid violet;
-
-    // @media screen and (min-width:1200px){}
-    // margin: 15px;
-  // }
 
   &-header {
     margin-top: 30px;
-    font-weight: bold;
-    // 700
+
+    font-weight: bold; // 700
     font-size: 14px;
     line-height: calc(16 / 14);
     text-align: center;
@@ -31,20 +23,28 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
   }
-
-  &-item{
-    margin-bottom: 30px;
-  }
 }
-// .vertu-item {
-//   // width: 270px;
 
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
 .icon-place {
-  // margin-right: auto;
-  // /* display: block; */
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
   background-color: #f5f4fa;
+}
+.vertu .icon {
+  margin: 25px 0;
+  width: 70px;
+  height: 70px;
+}
+@media screen and (min-width: 768px) {
+  .vertu {
+    &-list {
+      margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item{
+      margin: 15px;
+    }
+  }
 }

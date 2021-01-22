@@ -1,14 +1,7 @@
 //          Tablet Clients
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-item {
-    margin: var(--mci);
     width: calc((100% - 2 * 3 * var(--mci)) / 3);
   }
-  // .clients{
-  //   outline: 1px solid violet;
-  // }
-//   .container{
-//     outline: 1px solid violet;
-//   }
-
 }

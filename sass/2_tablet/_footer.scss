@@ -1,33 +1,13 @@
-//          Tablet Footer
+//      Tablet Footer
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
-  .footer-tablet {
-    display: flex;
-    justify-content: space-between;
-    // outline: 1px solid white;
-  }
-  .footer-logo {
-    margin-left: 100px; 
-  }
-  .footer address {
-    // margin-left: calc(76px - 15px);
-    display: flex;
-  }
-  .map-address {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-
-    transition: color var(--t-cubic);
-  }
-  .footer .part2 {
-    color: #ffffff;
+    &-logo {
+      margin-left: 100px;
+    }
+    & address {
+      display: flex;
+    }
   }
   .address-item {
     text-align: center;

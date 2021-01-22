@@ -116,3 +116,7 @@
   color: #fff;
   background-color: var(--accent-color);
 }
+.form button:hover,
+.form button:focus{
+  background-color: var(--accent-color-send-btn);
+}

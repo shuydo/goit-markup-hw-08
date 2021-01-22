@@ -1,10 +1,6 @@
 //      Desktop Footer
 
 @media screen and (min-width: $dt-res) {
-  .footer {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
   .footer .container {
     display: flex;
   }
@@ -14,50 +10,17 @@
     display: inline-block;
     margin-top: 20px;
   }
-  .map-address {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-
-    transition: color var(--t-cubic);
-  }
-  .footer .part2 {
-    color: #ffffff;
-  }
   .address-item .email,
   .address-item .phone {
     display: block;
     margin-top: 9px;
   }
-
-  .footer-tablet {
-    display: flex;
-    justify-content: space-between;
-
-    // outline: 1px solid white;
-  }
   .join-box {
-    width: 206px;
     height: 80px;
     margin-left: 70px;
-    margin-right: 0;
     margin-top: 12px;
 
     text-align: left;
-  }
-  .join-header,
-  .subscribe-email label {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: left;
-    color: #fff;
-
-    // outline: 1px solid red;
   }
   .soc-list-link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -65,7 +28,7 @@
   .join-box .soc-links {
     display: flex;
     justify-content: space-between;
-    // margin-top: 20px;
+
     fill: #afb1b8;
   }
   /* ------------------- ПОДПИСКА --------------------*/
@@ -73,38 +36,23 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
+
     width: 570px;
     height: 86px;
     margin-left: 93px;
-    margin-top: 12px;  
-    // outline: 1px solid white;
-  }
-  .subscribe-email label {
-    width: 358px;
-    // outline: 1px solid white;
-  }
-  .subscribe-input {
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    margin-top: 20px;   
-    
-    background-color: #2f303a;
-    // border: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+    margin-top: 12px;
 
-      line-height: calc(20 / 16);
-    color: #fff;
+    & label {
+      width: 358px;
+    }
+    & button {
+      margin: 0;
+    }
   }
-  .subscribe-email button {
-    padding: 10px 29px;
-    color: #fff;
-    background-color: var(--accent-color);
-  }
-  .send {
-    margin-left: 10px;
+
+  .subscribe-input {
+    padding-left: 16px;
+    
+    width: 358px;
   }
 }

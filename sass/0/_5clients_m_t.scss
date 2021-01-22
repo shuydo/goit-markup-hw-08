@@ -1,4 +1,4 @@
-//          Combi Clients M & T
+//          0 Clients
 
 :root {
   --mci: 15px; // --marg-cl-itm
@@ -6,52 +6,54 @@
 }
 .clients {
   padding: 60px 0;
+
   &-header {
-    margin-bottom: calc(2 * var(--mci));
-    // outline: 1px solid black;
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    font-size: 28px; // 36px;
+    line-height: calc(33 / 28); // 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
   }
-}
-.clients-header {
-  font-weight: bold;
-  font-size: 28px; // 36px;
-  line-height: calc(33 / 28); // 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.clients-list {
-  // @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  margin: var(--mcin);
-  //   outline: 1px solid black;
-}
-.client-icon {
-  max-width: 88px;
-  max-height: 52px;
-}
-.clients-item {
-  // margin: 0 var(--mci);
-  width: 100%;
-}
-.client-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  text-align: center;
-
-  fill: #afb1b8;
-
-  transition: fill var(--t-cubic);
-
-  &:hover,
-  &:focus {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
-    outline: none;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--mcin);
   }
+  &-icon {
+    max-width: 88px;
+    max-height: 52px;
+    fill: currentColor;
+  }
+  &-item {
+    margin: var(--mci);
+  
+    height: 90px;
+    width: 100%;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+    text-align: center;
+  
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+  
+    transition: color var(--t-cubic);
+  
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      color: var(--accent-color);
+      outline: none;
+    }
+}
+
+
 }

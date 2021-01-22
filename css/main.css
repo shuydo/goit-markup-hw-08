@@ -3,6 +3,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-color-send-btn: #188CE8;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --t-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -94,7 +95,9 @@ address {
 
 .logo {
   font-family: Raleway, sans-serif;
+  font-weight: bold;
   font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
 }
 
@@ -109,6 +112,7 @@ address {
 .button {
   display: flex;
   align-items: center;
+  border-width: 0;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -135,6 +139,43 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
+.nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  padding: 118px 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero .button {
+  margin-top: 30px;
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
 .vertu {
   padding: 60px 0;
 }
@@ -159,12 +200,28 @@ address {
   color: var(--primary-text-color);
 }
 
-.vertu-item {
-  margin-bottom: 30px;
+.icon-place {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #f5f4fa;
 }
 
-.icon-place {
-  background-color: #f5f4fa;
+.vertu .icon {
+  margin: 25px 0;
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .vertu-list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .vertu-item {
+    margin: 15px;
+  }
 }
 
 .direction {
@@ -177,7 +234,7 @@ address {
 }
 
 .team-header {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: calc(33 / 28);
@@ -216,14 +273,12 @@ address {
 
 .soc-links {
   display: flex;
-  display: inline-flexbox;
   justify-content: space-between;
   width: 206px;
 }
 
 .team .soc-links {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   fill: #afb1b8;
   border-radius: 50%;
 }
@@ -256,6 +311,17 @@ address {
   transition: fill var(--t-cubic);
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-item {
+    margin: 15px;
+  }
+}
+
 :root {
   --mci: 15px;
   --mcin: calc((-1) * (var(--mci)));
@@ -266,10 +332,7 @@ address {
 }
 
 .clients-header {
-  margin-bottom: calc(2 * var(--mci));
-}
-
-.clients-header {
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: calc(33 / 28);
@@ -284,35 +347,54 @@ address {
   margin: var(--mcin);
 }
 
-.client-icon {
+.clients-icon {
   max-width: 88px;
   max-height: 52px;
+  fill: currentColor;
 }
 
 .clients-item {
+  margin: var(--mci);
+  height: 90px;
   width: 100%;
 }
 
-.client-link {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 100%;
+  text-align: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  text-align: center;
-  fill: #afb1b8;
-  transition: fill var(--t-cubic);
+  color: #afb1b8;
+  transition: color var(--t-cubic);
 }
 
-.client-link:hover, .client-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
   outline: none;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+
+.footer .part2 {
+  color: #fff;
 }
 
 .footer address {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .address-item {
@@ -325,6 +407,7 @@ address {
 
 .map-address {
   color: #fff;
+  transition: color var(--t-cubic);
 }
 
 .join-box {
@@ -342,8 +425,9 @@ address {
   color: #fff;
 }
 
-.soc-links {
-  padding-top: 20px;
+.join-header {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .soc-list-link {
@@ -359,20 +443,20 @@ address {
 .subscribe-email input {
   display: block;
   margin-top: 20px;
+  padding-left: 16px;
   width: 100%;
   height: 50px;
-  padding-left: 16px;
+  line-height: calc(20 / 16);
+  color: #fff;
   background-color: #2f303a;
-  border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  line-height: calc(20 / 16);
-  color: #fff;
 }
 
 .subscribe-email button {
   margin: 20px auto 0 auto;
+  padding: 10px 29px;
   color: #fff;
   background-color: var(--accent-color);
 }
@@ -423,11 +507,6 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  /* display: flex;
-      justify-content: center;
-      align-items: center; */
-  /* text-align: center; */
-  /* vertical-align: center; */
   outline: none;
 }
 
@@ -555,6 +634,11 @@ address {
   background-color: var(--accent-color);
 }
 
+.form button:hover,
+.form button:focus {
+  background-color: var(--accent-color-send-btn);
+}
+
 @media screen and (max-width: 767px) {
   .menu-button {
     display: inline-flex;
@@ -650,41 +734,24 @@ address {
 
 @media screen and (max-width: 767px) {
   .header {
-    position: relative;
     display: flex;
     justify-content: center;
   }
-  .zero {
-    height: 60px;
-    background-color: tomato;
-  }
   .header .container {
     position: fixed;
-    width: 100%;
     height: 60px;
-    background: #fff;
-    border-bottom: 1px solid #ececec;
+    width: 100%;
+    background-color: #fff;
   }
-  .logo {
-    font-weight: bold;
-    line-height: calc(28 / 24);
-  }
-  .nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .zero {
+    height: 60px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    height: 400px;
-    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/img.jpg);
     background-size: 480px 400px;
-    background-repeat: no-repeat;
-    background-position: center top;
   }
 }
 
@@ -694,64 +761,25 @@ address {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42 / 26);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .hero .button {
-    margin: 30px auto 0 auto;
-    background-color: var(--accent-color);
-    color: #fff;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .vertu .icon {
-    margin: 25px 0px;
-    width: 70px;
-    height: 70px;
-  }
-  .icon-place {
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
+  .vertu-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .clients-item {
-    margin: var(--mci);
     width: calc((100% - 2 * 2 * var(--mci)) / 2);
-  }
-  .clients-item:not(:last-child) {
-    margin-bottom: var(--mci);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
   .footer-logo {
     text-align: center;
   }
   .footer address {
     text-align: center;
   }
-  .map-address {
-    transition: color var(--t-cubic);
-  }
-  .footer .part2 {
-    color: #ffffff;
-  }
-  /* ------------------- Присоединяйтесь --------------------*/
   .soc-links {
     fill: #fff;
     margin: 0 auto;
@@ -908,21 +936,9 @@ address {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/img.jpg);
     background-size: 768px 400px;
-    background-repeat: no-repeat;
-    background-position: center top;
   }
 }
 
@@ -933,83 +949,29 @@ address {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero-title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42 / 26);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .hero .button {
-    margin: 30px auto 0 auto;
-    color: #fff;
-    background-color: var(--accent-color);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .vertu-list {
-    margin: -15px;
-    display: flex;
-    flex-wrap: wrap;
-  }
   .vertu-item {
-    margin: 15px;
     width: calc((100% - 2 * 2 * 15px) / 2);
   }
-  .vertu .icon {
-    margin: 25px 142px;
-    width: 70px;
-    height: 70px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-list {
-    margin: -15px;
-    display: flex;
-    flex-wrap: wrap;
-  }
   .team-item {
-    margin: 15px;
     width: calc((100% - 2 * 2 * 15px) / 2);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-item {
-    margin: var(--mci);
     width: calc((100% - 2 * 3 * var(--mci)) / 3);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
-  .footer-tablet {
-    display: flex;
-    justify-content: space-between;
-  }
   .footer-logo {
     margin-left: 100px;
   }
   .footer address {
     display: flex;
-  }
-  .map-address {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    transition: color var(--t-cubic);
-  }
-  .footer .part2 {
-    color: #ffffff;
   }
   .address-item {
     text-align: center;
@@ -1202,25 +1164,14 @@ address {
   .logo {
     font-size: 26px;
     line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-  }
-  .nav {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    margin: 0 auto 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/img.jpg);
-    background-repeat: no-repeat;
     background-size: 1600px 600px;
-    background-position: center top;
   }
 }
 
@@ -1231,26 +1182,9 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
   .hero-title {
-    width: 696px;
-    font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .hero .button {
-    margin-top: 30px;
-    color: #fff;
-    background-color: var(--accent-color);
   }
 }
 
@@ -1258,45 +1192,15 @@ address {
   .vertu {
     padding: 94px 0;
   }
-  .vertu-list {
-    display: flex;
-  }
-  .vertu-header {
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-text-color);
-  }
-  .vertu-text {
-    margin-top: 10px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-  }
   .vertu-item {
-    margin: 15px;
     width: calc((100% - 4 * 2 * 15px) / 4);
-  }
-  .vertu .icon {
-    margin: 25px 100px;
-    width: 70px;
-    height: 70px;
-  }
-  .icon-place {
-    /* display: block; */
-    background-color: #f5f4fa;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .direction {
     display: block;
-    margin: 0 0 94px;
+    margin-bottom: 94px;
   }
   .direction-list {
     margin-top: 50px;
@@ -1317,17 +1221,16 @@ address {
   .moir-content {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
+    padding: 27px 0;
+    color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
-    padding: 27px;
     font-weight: bold;
     font-size: 14px;
     line-height: calc(16 / 14);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
   }
 }
 
@@ -1335,128 +1238,34 @@ address {
   .team {
     padding: 94px 0;
   }
-  .team-list {
-    margin: -15px;
-    display: flex;
+  .team img {
+    width: 270px;
   }
   .team-header {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-size: 36px;
-    line-height: calc(42/36);
+    line-height: calc(42 / 36);
   }
   .team-item {
     padding-bottom: 30px;
-    margin: 15px;
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  .team-name {
-    margin-top: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-  }
-  .team-spec {
-    margin-top: 10px;
-    margin-bottom: 16px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-  }
-  .soc-links {
-    display: flex;
-    justify-content: space-between;
-    width: 206px;
-  }
-  .team .soc-links {
-    display: inline-flex;
-    margin: 0 32px;
-    fill: #afb1b8;
-    border-radius: 50%;
-  }
-  .soc-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color var(--t-cubic);
-  }
-  .soc-list-link:hover, .soc-list-link:focus {
-    background-color: var(--accent-color);
-    transition: var(--t-cubic);
-  }
-  .soc-icon {
-    width: 20px;
-    height: 20px;
-    fill: #afb1b8;
-    transition: fill var(--t-cubic);
-  }
-  .soc-list-link:hover .soc-icon,
-  .soc-list-link:focus .soc-icon {
-    fill: #fff;
-    transition: fill var(--t-cubic);
-  }
-  .team img {
-    width: 270px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
   }
   .clients-header {
-    font-size: 36px;
-    line-height: calc(42/36);
     margin-bottom: 50px;
-  }
-  .clients-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
-  .client-icon {
-    max-width: 88px;
-    max-height: 52px;
-    fill: currentColor;
+    font-size: 36px;
+    line-height: calc(42 / 36);
   }
   .clients-item {
-    margin: var(--mci);
     width: calc((100% - 2 * 6 * var(--mci)) / 6);
-  }
-  .client-link {
-    display: inline-block;
-    width: 170px;
-    height: 90px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    text-align: center;
-    padding: 20px 0;
-    color: #afb1b8;
-    transition: color var(--t-cubic);
-  }
-  .client-link:hover, .client-link:focus {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    outline: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
   .footer .container {
     display: flex;
   }
@@ -1466,43 +1275,16 @@ address {
     display: inline-block;
     margin-top: 20px;
   }
-  .map-address {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    transition: color var(--t-cubic);
-  }
-  .footer .part2 {
-    color: #ffffff;
-  }
   .address-item .email,
   .address-item .phone {
     display: block;
     margin-top: 9px;
   }
-  .footer-tablet {
-    display: flex;
-    justify-content: space-between;
-  }
   .join-box {
-    width: 206px;
     height: 80px;
     margin-left: 70px;
-    margin-right: 0;
     margin-top: 12px;
     text-align: left;
-  }
-  .join-header,
-  .subscribe-email label {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: left;
-    color: #fff;
   }
   .soc-list-link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -1525,25 +1307,12 @@ address {
   .subscribe-email label {
     width: 358px;
   }
-  .subscribe-input {
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    margin-top: 20px;
-    background-color: #2f303a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    line-height: calc(20 / 16);
-    color: #fff;
-  }
   .subscribe-email button {
-    padding: 10px 29px;
-    color: #fff;
-    background-color: var(--accent-color);
+    margin: 0;
   }
-  .send {
-    margin-left: 10px;
+  .subscribe-input {
+    padding-left: 16px;
+    width: 358px;
   }
 }
 

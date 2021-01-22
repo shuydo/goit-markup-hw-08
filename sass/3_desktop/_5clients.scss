@@ -2,51 +2,16 @@
 
 @media screen and (min-width: $dt-res) {
   .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
 
     &-header {
-      font-size: 36px;
-      line-height: calc(42/36);
       margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: calc(42 / 36);
     }
-
-    &-list {
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-      // outline: 1px solid black;
-    }
-  }
-  .client-icon {
-    max-width: 88px;
-    max-height: 52px;
-    fill: currentColor;
-  }
-  .clients-item {
-    margin: var(--mci);
-    width: calc((100% - 2 * 6 * var(--mci)) / 6);
-  }
-  .client-link {
-    display: inline-block;
-    width: 170px;
-    height: 90px;
-
-    // border: 1px solid var(--accent-color);
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    text-align: center;
-    padding: 20px 0;
-    color: #afb1b8;
-
-    transition: color var(--t-cubic);
-
-    &:hover,
-    &:focus {
-      border: 1px solid var(--accent-color);
-      color: var(--accent-color);
-      // fill: var(--accent-color);
-      outline: none;
+    &-item {
+      width: calc((100% - 2 * 6 * var(--mci)) / 6);
     }
   }
 }

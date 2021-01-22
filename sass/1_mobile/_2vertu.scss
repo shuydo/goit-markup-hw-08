@@ -1,15 +1,9 @@
 //  Mobi Vertu
 
 @media screen and (max-width: 767px) {
-  .vertu .icon {
-    margin: 25px 0px;
-    width: 70px;
-    height: 70px;
-  }
-  .icon-place{
-    display: flex;
-    justify-content: center;
-    // align-items: center; 
-    border-radius: 4px;
+  .vertu {
+    &-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }

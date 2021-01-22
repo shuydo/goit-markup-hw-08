@@ -2,8 +2,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    // width: 768px;
-    padding: 118px 0;
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -13,38 +11,12 @@
         ),
         url(../images/tablet/img@2x.jpg);
     }
-
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/tablet/img.jpg);
-
+      
     background-size: 768px 400px;
-    background-repeat: no-repeat;
-    background-position: center top;
-
-    // outline: 2px solid blueviolet;
-  }
-
-  .hero-title {
-    // padding-top: 118px;
-    // width: 696px;
-    font-weight: 900;
-    font-size: 26px;
-    // 44px;
-    line-height: calc(42 / 26);
-    // 60/44
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .hero .button {
-    // margin-top: 30px;
-    margin: 30px auto 0 auto;
-    color: #fff;
-    background-color: var(--accent-color);
-    // background-color: red;
   }
 }
